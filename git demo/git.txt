@@ -1,0 +1,79 @@
+GIT--- git allows all developers to access entire copy of code on their local systems
+	Any changes made to source code can be tracked by others.
+DevOps--- that allows development and operations team to work together
+	developers continuously develop and test codes.
+DevOps tools for coding and planning is GIT
+GIT
+version control system(system that records all changes made to a file) for tracking changes in computer files.
+It is generally used to source code management in software development.
+GIT features
+	open and free source
+	create backups
+	support collaboration
+	distributed development
+GIT COMMANDS
+create repository--- git init
+make changes-------add, commit, status
+parallel devlpmt-----branch, merge, rebase
+sync repo------------push, pull, add origin
+
+HANDSON
+1.create a github account
+2.check version of git
+$git --version
+3.To set username and email to access git account
+$git config --global user.name "Lathika248"
+$git config --global user.email "lathika138@gmail.com"
+4.To get list of users
+$git config --list
+5.Need help
+$git help config
+or
+$git config --help
+6.To know ur username and email
+$ git config --global user.name
+$ git config --global user.email
+7.To create repository in local system
+$mkdir test
+8.Move to test directory
+$cd test
+9.Create new git instance for a project
+$git init
+10.Create text file in test directory ,write something and save it
+11.Check status of the repository
+$git status
+12.Created file to make commit
+$git add info.txt
+$git commit -m "commiting text file"
+
+
+13.If u make any changes to text file and observe difference
+$git diff
+14. git config --global user.username lathika1234
+15.In github account create new repository with test as directory name
+make it public and create
+16.In github copy the link from code section
+17.To link local repository with remote repository in github
+$git remote add origin https://github.com/lathika1234/test.git
+$git remote -v
+18.To push file from local to remote
+$git push -u origin master
+or
+$git push --set-upstream origin master
+
+19.Merging files in test directory
+$git branch first_branch
+$git checkout first_branch //info.txt
+$git add info2.txt
+
+commit
+$git commit -m "made changes to first branch"
+
+Checkout master branch
+$git checkout master //info.txt
+
+$git merge first_branch
+
+
+
+
